@@ -1,4 +1,3 @@
-
 # YARAH AI
 
 YARAH AI is a sophisticated web application designed for deep and insightful scriptural study. It combines a modern, user-friendly interface with the power of generative AI to allow users to ask context-rich questions about the Bible, other religious texts, and historical events.
@@ -82,3 +81,25 @@ This project is configured for easy, zero-config deployment to [Vercel](https://
 
 4.  **Deploy:**
     -   Click the "Deploy" button. Vercel will deploy your site, and it will be live at the provided domain.
+
+### Deploying to Netlify
+
+This project is also configured for easy deployment to [Netlify](https://www.netlify.com/).
+
+1.  **Push to GitHub/GitLab/Bitbucket:**
+    Ensure your project is pushed to a Git repository.
+
+2.  **Import Project on Netlify:**
+    -   Log in to your Netlify account.
+    -   Click "Add new site" -> "Import an existing project".
+    -   Connect your Git provider and select the repository.
+
+3.  **Configure Project:**
+    -   Netlify will automatically detect the `netlify.toml` file in your repository. The build command will be empty and the publish directory will be set to the root (`.`), which is correct for this static site.
+    -   Navigate to **Site configuration** -> **Environment variables**.
+    -   Add your Google Gemini API key:
+        -   **Key**: `API_KEY`
+        -   **Value**: `YOUR_GOOGLE_GEMINI_API_KEY`
+
+4.  **Deploy:**
+    -   Click the "Deploy site" button. Netlify will deploy your site.
